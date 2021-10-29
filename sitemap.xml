@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://docEdub.com/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>https://docEdub.com/posts/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/1/</loc>
+    <loc>https://docEdub.com/posts/1/</loc>
     <lastmod>2021-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://docEdub.com/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://docEdub.com/tags/</loc>
   </url>
 </urlset>

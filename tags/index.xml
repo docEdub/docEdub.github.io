@@ -5,12 +5,12 @@
     
     
     
-    <link>/tags/</link>
+    <link>https://docEdub.com/tags/</link>
     <description>Recent content in Tags on docEdub</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://docEdub.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
