@@ -64,7 +64,7 @@ closer you get to the objects the music is coming from, the louder the music wil
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;My custom Javascript compresses to 116 kB. Source code is &lt;a href=&#34;//github.com/docEdub/WorksInProgress/tree/Projects/1-ProofOfConcept/Projects/1-ProofOfConcept&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My custom Javascript compresses to 116 kB. Source code is &lt;a href=&#34;//github.com/docEdub/WorksInProgress/tree/Projects/1-ProofOfConcept&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
 &lt;p&gt;The audio is generated in realtime using the &lt;a href=&#34;//github.com/csound/csound/tree/feature/webaudio-csound/wasm&#34;&gt;WASM version of Csound&lt;/a&gt;. For the realtime graphics people out there, Csound is kind of like shaders for audio. In a browser
 it runs on the CPU in a separate &lt;a href=&#34;//developer.mozilla.org/en-US/docs/Web/API/AudioWorklet&#34;&gt;AudioWorklet&lt;/a&gt; thread.&lt;/p&gt;
