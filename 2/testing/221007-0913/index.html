@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>PrimitiveTriangles</title>
+        <link rel="shortcut icon" href="/img/favicon.png" />
+        <style>
+            .no-select {
+                -webkit-tap-highlight-color: transparent;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .no-select:focus {
+                outline: none !important;
+            }
+
+            /* Need this to make BabylonJS debug layer explorer visible. */
+            #scene-explorer-host {
+                z-index: 1;
+            }
+
+            body {
+                background: black;
+            }
+
+            #Loading {
+                position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                color: grey;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 32pt;
+                font-weight: bold;
+            }
+
+            #BabylonCanvas {
+                position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+                background: rgba(0, 0, 0, 0);
+            }
+
+            #babylonUnmuteIconBtn {
+                display: none !important;
+            }
+
+            #audio-selection-overlay {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.75);
+            }
+
+            #ConsoleOutput {
+                position: absolute;
+                top: 83%;
+                height: 17%;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding-left: 16px;
+
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+            li {
+                color: white;
+                opacity: 0.5;
+            }
+            #ConsoleOutput::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+        <!-- <script defer data-domain="docedub.com" src="https://plausible.io/js/plausible.js"></script> -->
+    </head>
+    <body>
+        <div id="Loading">Loading ...</div>
+        <canvas id="BabylonCanvas" class="no-select">
+        </canvas>
+        <div id="audio-selection-overlay">
+            <div id="audio-selection-buttons">
+                <button id="audio-3dof-button">3dof</button>
+                <button id="audio-6dof-button">6dof</button>
+            </div>
+        </div>
+        <!--
+        <ul id="ConsoleOutput">
+        </ul>
+        -->
+        <!--
+        <script id="csound-script" type="module">
+            console.debug("Csound importing ...");
+            import { Csound } from "https://unpkg.com/@doc.e.dub/csound-browser@6.17.0-beta5/dist/csound.esm.js";
+            // import { Csound } from "./csound.esm.js";
+            document.Csound = Csound;
+        </script>
+        -->
+        <script src="https://unpkg.com/osc-js@2.3.0/lib/osc.min.js"></script>
+        <script src="https://unpkg.com/babylonjs@5.18.0/babylon.js"></script>
+        <!-- <script src="https://www.gstatic.com/external_hosted/omnitone/build/omnitone.min.js"></script> -->
+        <script src="./app.js"></script>
+        <script>
+            document.visible = true;
+            (function() {
+                var hidden = "hidden";
+                if (hidden in document) {
+                    document.addEventListener("visibilitychange", onchange);
+                }
+                else if ((hidden = "mozHidden") in document) {
+                    document.addEventListener("mozvisibilitychange", onchange);
+                }
+                else if ((hidden = "webkitHidden") in document) {
+                    document.addEventListener("webkitvisibilitychange", onchange);
+                }
+                else if ((hidden = "msHidden") in document) {
+                    document.addEventListener("msvisibilitychange", onchange);
+                }
+                else if ("onfocusin" in document) {
+                    // IE 9 and lower:
+                    document.onfocusin = document.onfocusout = onchange;
+                }
+                else {
+                    // All others:
+                    window.onpageshow = window.onpagehide = window.onfocus = window.onblur = onchange;
+                }
+
+                function onchange (evt) {
+                    document.visible = document.visibilityState === 'visible';
+                    console.debug(`document.visible = ${document.visible}` );
+                }
+            })();
+        </script>
+    </body>
+</html>
