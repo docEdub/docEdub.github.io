@@ -9,17 +9,17 @@
     <description>Recent content on docEdub</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://docEdub.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Primitives: Triangle</title>
-      <link>https://docEdub.com/posts/2/preview/220312/</link>
-      <pubDate>Sat, 12 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Triangle</title>
+      <link>https://docEdub.com/posts/2/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://docEdub.com/posts/2/preview/220312/</guid>
+      <guid>https://docEdub.com/posts/2/</guid>
       <description>
         
           
@@ -27,14 +27,103 @@
           
         
         
-        &lt;p&gt;Making progress on the first scene from my upcoming “Primitives” project…&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/UOPAxmXKLNU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Triangles are the theme for this scene. The graphics are all triangles and the music uses triangle waveforms. I&amp;rsquo;m
-planning on adding more later and following it up with two more scenes named &amp;ldquo;Circle&amp;rdquo; and &amp;ldquo;Square&amp;rdquo;.&lt;/p&gt;
+        &lt;p&gt;&amp;ldquo;&lt;a href=&#34;https://docEdub.com/2/&#34;&gt;Triangle&lt;/a&gt;&amp;rdquo; is my second virtual reality experience. It is the first piece of a three part series named &amp;ldquo;Primitives&amp;rdquo;. Each piece in the series explores using a basic shape to create with.&lt;/p&gt;
+&lt;p&gt;The six degrees of freedom experience works in the Oculus Quest 2 browser and most desktop browsers.&lt;/p&gt;
+&lt;p&gt;The three degrees of freedom experience works on most mobile devices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docEdub.com/2/&#34;&gt;&lt;img src=&#34;https://docEdub.com/posts/2/preview.jpg&#34; alt=&#34;&amp;ldquo;Triangle&amp;rdquo; preview image&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The triangle is everywhere in computer graphics, which is why I chose it as the first shape in the &amp;ldquo;Primitives&amp;rdquo; series. I used triangles a lot in it, as you can see. What you can&amp;rsquo;t see is I used &lt;a href=&#34;https://en.wikipedia.org/wiki/Triangle_wave&#34;&gt;triangle waves&lt;/a&gt; in the music, too. This draws an even deeper connection between the graphics and the audio than is visible on the surface.&lt;/p&gt;
+&lt;p&gt;The experience is pretty basic (primitive?) but that&amp;rsquo;s the idea for now as I continue building out my creative workflow. I spent some of my coding time for this project getting the DAW synced with the graphics engine to make editing easier. This was one of the biggest issues I ran into while making my last piece. I had no way of jumping to any specific time in the music while tweaking the animation and spatial audio settings. To see how a change affected something at the end of the piece, I had to play the whole thing from the start each time. Not fun. For this piece I used &lt;a href=&#34;https://en.wikipedia.org/wiki/Open_Sound_Control&#34;&gt;OSC&lt;/a&gt; to keep the graphics engine synced with the DAW, and setup all the animations so they update correctly when the playback time in the DAW changes. It&amp;rsquo;s a lot more fun, now.&lt;/p&gt;
+&lt;p&gt;I also worked on some ideas for sharing animation curves between the synths and the graphics. One of those ideas worked really well and I was able to use it to do some cool doppler effects.&lt;/p&gt;
+&lt;p&gt;The music for this experience has a lot more tracks in it than the last one I did, so I spent a lot of time making new synths and finding ways to optimize the real-time audio generation so it would still work on the Quest 2.&lt;/p&gt;
+&lt;p&gt;I had hoped to get this all done in a few months, but it took twelve. Hopefully, the next one will take less time.&lt;/p&gt;
+&lt;h2 id=&#34;instructions&#34;&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;It takes a little time for the music get going so don&amp;rsquo;t turn up the volume too soon. Also note that the
+closer you get to the objects the music is coming from, the louder the music will get.&lt;/p&gt;
+&lt;p&gt;When the scene first loads you will see two buttons available for selecting which experience level you would like to use.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The three degrees of freedom (3dof) experience is for mobile devices with no keyboard. This level lets you look around but does not let you move around.&lt;/li&gt;
+&lt;li&gt;The six degrees of freedom (6dof) experience is for VR headsets and desktop computers. This level lets you move around and explore.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After the experience level is selected, if a VR device is available you&amp;rsquo;ll see a button in the bottom right to enter VR mode.&lt;/p&gt;
+&lt;p&gt;To look around on desktop and mobile devices, click and drag the mouse or drag your finger on the screen.&lt;/p&gt;
+&lt;p&gt;On desktop devices, press the &lt;code&gt;WASD&lt;/code&gt; or arrow keys to move. Hold down the &lt;code&gt;Shift&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt; key to move faster, or use &lt;code&gt;Caps Lock&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On VR devices, use the thumbstick to teleport.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;technical-details&#34;&gt;Technical details&lt;/h2&gt;
+&lt;h4 id=&#34;javascript&#34;&gt;Javascript&lt;/h4&gt;
+&lt;p&gt;I used two Javascript libraries: &lt;a href=&#34;//csound.com&#34;&gt;Csound&lt;/a&gt; for audio and &lt;a href=&#34;//babylonjs.com&#34;&gt;Babylon.js&lt;/a&gt; for graphics.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Library&lt;/th&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;th&gt;Size&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;//github.com/csound/csound&#34;&gt;Csound&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;//npmjs.com/package/@doc.e.dub/csound-browser/v/6.17.0-beta5&#34;&gt;6.17.0-beta5&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;1.9 MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;//github.com/babylonjs/babylon.js&#34;&gt;Babylon.js&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;//npmjs.com/package/babylonjs&#34;&gt;5.30.0&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;766 kB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;My custom Javascript compresses to 153 kB. Source code is &lt;a href=&#34;//github.com/docEdub/WorksInProgress/tree/Projects/2-PrimitiveTriangles&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;audio&#34;&gt;Audio&lt;/h4&gt;
+&lt;p&gt;The six degrees of freedom audio is generated in realtime using the &lt;a href=&#34;//github.com/csound/csound/tree/master/wasm&#34;&gt;WASM version of Csound&lt;/a&gt;. For the realtime graphics people out there, Csound is kind of like shaders for audio. In a browser
+it runs on the CPU in a separate &lt;a href=&#34;//developer.mozilla.org/en-US/docs/Web/API/AudioWorklet&#34;&gt;AudioWorklet&lt;/a&gt; thread.&lt;/p&gt;
+&lt;p&gt;For the immersive audio I reimplemented &lt;a href=&#34;//github.com/GoogleChrome/omnitone&#34;&gt;Google&amp;rsquo;s Omnitone library&lt;/a&gt; in Csound. It works pretty well and allows me to use a lot more sound sources than I can with other methods.&lt;/p&gt;
+&lt;p&gt;My composing workflow went like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sequence music in &lt;a href=&#34;//www.reaper.fm/&#34;&gt;Reaper&lt;/a&gt; DAW with plugins generated by &lt;a href=&#34;//cabbageaudio.com/&#34;&gt;Cabbage&lt;/a&gt; from my Csound scripts.&lt;/li&gt;
+&lt;li&gt;Bounce DAW settings and plugins to a monolithic Csound file using the steps listed &lt;a href=&#34;//github.com/docEdub/WorksInProgress/tree/Projects/2-PrimitiveTriangles#bounce-reaper-projects-to-monolith-csound-csd&#34;&gt;here&lt;/a&gt;. This bounce-down process also generates a JSON file with all the data needed to synchronize the animations.&lt;/li&gt;
+&lt;li&gt;Use the monolithic Csound file directly in the six degrees of freedom experience.&lt;/li&gt;
+&lt;li&gt;Bounce the monolithic Csound file to two stereo .mp3 files that are combined to create the three degrees of freedom first order ambisonic audio.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;graphics&#34;&gt;Graphics&lt;/h4&gt;
+&lt;p&gt;The graphics are handled by &lt;a href=&#34;//github.com/BabylonJS/Babylon.js&#34;&gt;Babylon.js&lt;/a&gt;. The JSON file generated by the
+bounced Csound script contains info needed for synchronizing the graphics to the audio.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Meshes&lt;/td&gt;
+&lt;td&gt;64&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Draw calls&lt;/td&gt;
+&lt;td&gt;32&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lights&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vertices&lt;/td&gt;
+&lt;td&gt;17095&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Materials&lt;/td&gt;
+&lt;td&gt;49&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Textures&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
         
         </description>
     </item>
