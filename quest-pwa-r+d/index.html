@@ -24,10 +24,10 @@
   <meta name="pwa-starter-template-identity" content="pwa-starter"/>
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="icon" href="/assets/icons/icon_24.png" type="image/x-icon" />
+  <link rel="icon" href="/quest-pwa-r+d/assets/icons/icon_24.png" type="image/x-icon" />
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="/quest-pwa-r+d/manifest.json" />
 
   <!-- light mode and dark mode CSS -->
   <link rel="stylesheet" media="(prefers-color-scheme:light)"
@@ -36,6 +36,7 @@
     href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
     onload="document.documentElement.classList.add('sl-theme-dark');">
 
+<script>navigator.serviceWorker.register("pwabuilder-adv-sw.js")</script>
 <script>navigator.serviceWorker.register("pwabuilder-adv-sw.js")</script>
 <link rel="manifest" href="data:application/json;base64,ewoiZGlzcGxheV9vdmVycmlkZSI6IFsid2luZG93LWNvbnRyb2xzLW92ZXJsYXkiXSwKInByb3RvY29sX2hhbmRsZXJzIjogW3sicHJvdG9jb2wiOiJtYWlsdG8iLCJ1cmwiOiIvbmV3RW1haWw/dG89JXMifV0sCiJuYW1lIjogInF1ZXN0LXB3YS1yK2QiLAoic2hvcnRfbmFtZSI6ICJUaGlzIG5hbWUgd2lsbCBzaG93IGluIHlvdXIgV2luZG93cyB0YXNrYmFyLCBpbiB0aGUgc3RhcnQgbWVudSwgYW5kIEFuZHJvaWQgaG9tZXNjcmVlbiIsCiJzdGFydF91cmwiOiAiVGhlIFVSTCB0aGF0IHNob3VsZCBiZSBsb2FkZWQgd2hlbiB5b3VyIGFwcGxpY2F0aW9uIGlzIG9wZW5lZCIsCiJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAoiZGVzY3JpcHRpb24iOiAiQSBkZXNjcmlwdGlvbiBmb3IgeW91ciBhcHBsaWNhdGlvbiIsCiJsYW5nIjogIiBUaGUgZGVmYXVsdCBsYW5ndWFnZSBvZiB5b3VyIGFwcGxpY2F0aW9uIiwKImRpciI6ICJhdXRvIiwKInRoZW1lX2NvbG9yIjogIiMwMDAwMDAiLAoiYmFja2dyb3VuZF9jb2xvciI6ICIjMDAwMDAwIiwKIm9yaWVudGF0aW9uIjogImFueSIsCiJpY29ucyI6IFsKICAgIHsKICAgICAgICAic3JjIjogImh0dHBzOi8vd3d3LnB3YWJ1aWxkZXIuY29tL2Fzc2V0cy9pY29ucy9pY29uXzUxMi5wbmciLAogICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAgICJwdXJwb3NlIjogIm1hc2thYmxlIgogICAgfSwKICAgIHsKICAgICAgICAic3JjIjogImh0dHBzOi8vd3d3LnB3YWJ1aWxkZXIuY29tL2Fzc2V0cy9pY29ucy9pY29uXzE5Mi5wbmciLAogICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAgICJwdXJwb3NlIjogImFueSIKICAgIH0KXSwKInNjcmVlbnNob3RzIjogWwogICAgewogICAgICAgICJzcmMiOiAiaHR0cHM6Ly93d3cucHdhYnVpbGRlci5jb20vYXNzZXRzL3NjcmVlbnNob3RzL3NjcmVlbjEucG5nIiwKICAgICAgICAic2l6ZXMiOiAiMjg4MHgxODAwIiwKICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJBIHNjcmVlbnNob3Qgb2YgdGhlIGhvbWUgcGFnZSIKICAgIH0KXSwKInJlbGF0ZWRfYXBwbGljYXRpb25zIjogWwogICAgewogICAgICAgICJwbGF0Zm9ybSI6IndpbmRvd3MiLAogICAgICAgICJ1cmwiOiAiIFRoZSBVUkwgdG8geW91ciBhcHAgaW4gdGhhdCBhcHAgc3RvcmUiCiAgICB9Cl0sCiJwcmVmZXJfcmVsYXRlZF9hcHBsaWNhdGlvbnMiOiBmYWxzZSwKInNob3J0Y3V0cyI6IFsKICAgIHsKICAgICAgICAibmFtZSI6IlRoZSBuYW1lIHlvdSB3b3VsZCBsaWtlIHRvIGJlIGRpc3BsYXllZCBmb3IgeW91ciBzaG9ydGN1dCIsCiAgICAgICAgInVybCI6IlRoZSB1cmwgeW91IHdvdWxkIGxpa2UgdG8gb3BlbiB3aGVuIHRoZSB1c2VyIGNob29zZXMgdGhpcyBzaG9ydGN1dC4gVGhpcyBtdXN0IGJlIGEgVVJMIGxvY2FsIHRvIHlvdXIgUFdBLiBGb3IgZXhhbXBsZTogSWYgbXkgc3RhcnRfdXJsIGlzIC8sIHRoaXMgVVJMIG11c3QgYmUgc29tZXRoaW5nIGxpa2UgL3Nob3J0Y3V0IiwKICAgICAgICAiZGVzY3JpcHRpb24iOiJBIGRlc2NyaXB0aW9uIG9mIHRoZSBmdW5jdGlvbmFsaXR5IG9mIHRoaXMgc2hvcnRjdXQiCiAgICB9Cl0KfQ==" />  
   <script type="module" crossorigin src="/code/index.20567937.js"></script>
@@ -49,7 +50,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register(
-        '/sw.js'
+        '/quest-pwa-r+d/sw.js'
       );
     }
   </script>
